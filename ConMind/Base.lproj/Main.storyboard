@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0qx-V3-h2e">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="XZj-6W-YG4">
+            <objects>
+                <viewController id="0qx-V3-h2e" customClass="CardViewController" customModule="ConMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39g-Uo-QPN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="djj-N1-pYh">
+                                <rect key="frame" x="20" y="64" width="374" height="316"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pM2-uN-jOX">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMq-Ov-hii" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN7-Rr-XTs">
+                                                        <rect key="frame" x="33" y="21.5" width="22" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUA-EO-ut9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="tN7-Rr-XTs" firstAttribute="centerY" secondItem="oMq-Ov-hii" secondAttribute="centerY" id="Gnn-3M-Ldi"/>
+                                                    <constraint firstItem="tN7-Rr-XTs" firstAttribute="centerX" secondItem="oMq-Ov-hii" secondAttribute="centerX" id="Zez-jH-G2S"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="IUA-EO-ut9" id="wKQ-Z4-QZ0"/>
+                                                    <outlet property="cardLabel" destination="tN7-Rr-XTs" id="F8k-M0-LAe"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9d-cl-1fM" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGW-Gn-Ydr">
+                                                        <rect key="frame" x="30" y="21.5" width="28" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwG-HD-21U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="hGW-Gn-Ydr" firstAttribute="centerY" secondItem="c9d-cl-1fM" secondAttribute="centerY" id="NFZ-UD-LDK"/>
+                                                    <constraint firstItem="hGW-Gn-Ydr" firstAttribute="centerX" secondItem="c9d-cl-1fM" secondAttribute="centerX" id="Ngh-aS-VyT"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="jwG-HD-21U" id="vv7-A6-3HS"/>
+                                                    <outlet property="cardLabel" destination="hGW-Gn-Ydr" id="OzT-Fa-2p6"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9N-jN-6vy" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07B-S1-pt1">
+                                                        <rect key="frame" x="29.5" y="21.5" width="29" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qtw-mT-wtN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="07B-S1-pt1" firstAttribute="centerX" secondItem="s9N-jN-6vy" secondAttribute="centerX" id="9Kp-7m-GsZ"/>
+                                                    <constraint firstItem="07B-S1-pt1" firstAttribute="centerY" secondItem="s9N-jN-6vy" secondAttribute="centerY" id="FvM-7p-tRV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="qtw-mT-wtN" id="bMz-Xl-aLj"/>
+                                                    <outlet property="cardLabel" destination="07B-S1-pt1" id="HLs-Xg-dtr"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R0-a8-Nug" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9K-oa-8RY">
+                                                        <rect key="frame" x="29" y="21.5" width="29.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPg-vT-JJf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="E9K-oa-8RY" firstAttribute="centerX" secondItem="3R0-a8-Nug" secondAttribute="centerX" id="4ns-sd-2is"/>
+                                                    <constraint firstItem="E9K-oa-8RY" firstAttribute="centerY" secondItem="3R0-a8-Nug" secondAttribute="centerY" id="OaG-fK-Dyb"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="kPg-vT-JJf" id="cxE-BD-s9J"/>
+                                                    <outlet property="cardLabel" destination="E9K-oa-8RY" id="Drk-5m-Vzz"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-Pq-yOA">
+                                        <rect key="frame" x="0.0" y="108" width="374" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy3-rs-w4L" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljv-fN-Ucg">
+                                                        <rect key="frame" x="29.5" y="21.5" width="28.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMR-7S-lCD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="ljv-fN-Ucg" firstAttribute="centerX" secondItem="Oy3-rs-w4L" secondAttribute="centerX" id="Pc9-v5-6Nc"/>
+                                                    <constraint firstItem="ljv-fN-Ucg" firstAttribute="centerY" secondItem="Oy3-rs-w4L" secondAttribute="centerY" id="gNh-eU-yPo"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="SMR-7S-lCD" id="iX8-Wk-TXy"/>
+                                                    <outlet property="cardLabel" destination="ljv-fN-Ucg" id="K7b-MT-nrW"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S01-pY-yQf" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3g-YM-OXh">
+                                                        <rect key="frame" x="29" y="21.5" width="29.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eox-h1-4cU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="r3g-YM-OXh" firstAttribute="centerX" secondItem="S01-pY-yQf" secondAttribute="centerX" id="Bk0-w2-ms0"/>
+                                                    <constraint firstItem="r3g-YM-OXh" firstAttribute="centerY" secondItem="S01-pY-yQf" secondAttribute="centerY" id="SBw-RR-BHO"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="Eox-h1-4cU" id="1fb-Zn-Wbq"/>
+                                                    <outlet property="cardLabel" destination="r3g-YM-OXh" id="ypN-y3-N3H"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMQ-mg-BQr" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfI-E8-A9s">
+                                                        <rect key="frame" x="30.5" y="21.5" width="27" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-FY-Fa7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="QfI-E8-A9s" firstAttribute="centerY" secondItem="hMQ-mg-BQr" secondAttribute="centerY" id="Mzh-0O-KsJ"/>
+                                                    <constraint firstItem="QfI-E8-A9s" firstAttribute="centerX" secondItem="hMQ-mg-BQr" secondAttribute="centerX" id="cZV-Jp-oT3"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="JXq-FY-Fa7" id="sPV-bz-PEZ"/>
+                                                    <outlet property="cardLabel" destination="QfI-E8-A9s" id="isp-IG-DW5"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeX-aM-wQz" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-B5-Eda">
+                                                        <rect key="frame" x="29" y="21.5" width="29.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPD-cC-nXQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="xek-B5-Eda" firstAttribute="centerY" secondItem="VeX-aM-wQz" secondAttribute="centerY" id="8JL-To-Ivd"/>
+                                                    <constraint firstItem="xek-B5-Eda" firstAttribute="centerX" secondItem="VeX-aM-wQz" secondAttribute="centerX" id="Abg-Ch-HNQ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="sPD-cC-nXQ" id="bGH-mc-Q8H"/>
+                                                    <outlet property="cardLabel" destination="xek-B5-Eda" id="XBE-tu-DGo"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="drM-uR-8Vp">
+                                        <rect key="frame" x="0.0" y="216" width="374" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrD-lg-isv" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbA-Dl-OId">
+                                                        <rect key="frame" x="29" y="22" width="30" height="57"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-g8-NUY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="EbA-Dl-OId" firstAttribute="centerY" secondItem="LrD-lg-isv" secondAttribute="centerY" id="AMM-iy-AMZ"/>
+                                                    <constraint firstItem="EbA-Dl-OId" firstAttribute="centerX" secondItem="LrD-lg-isv" secondAttribute="centerX" id="I5B-gZ-Jnm"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="Xqe-g8-NUY" id="rWR-Gb-JHW"/>
+                                                    <outlet property="cardLabel" destination="EbA-Dl-OId" id="2VZ-9f-CJq"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-5Y-myg" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP3-xD-xm6">
+                                                        <rect key="frame" x="18" y="21.5" width="51.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFQ-c2-Z9o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="wP3-xD-xm6" firstAttribute="centerY" secondItem="DFB-5Y-myg" secondAttribute="centerY" id="jUm-w3-jw6"/>
+                                                    <constraint firstItem="wP3-xD-xm6" firstAttribute="centerX" secondItem="DFB-5Y-myg" secondAttribute="centerX" id="ynR-pC-ynO"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="gFQ-c2-Z9o" id="2NC-KT-F6m"/>
+                                                    <outlet property="cardLabel" destination="wP3-xD-xm6" id="sp3-kV-Ju8"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQ7-hN-de2" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eS-IF-EPN">
+                                                        <rect key="frame" x="22" y="21.5" width="43.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJL-9l-rDZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="2eS-IF-EPN" firstAttribute="centerX" secondItem="nQ7-hN-de2" secondAttribute="centerX" id="rWB-L3-qFN"/>
+                                                    <constraint firstItem="2eS-IF-EPN" firstAttribute="centerY" secondItem="nQ7-hN-de2" secondAttribute="centerY" id="ui3-wg-xAc"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="pJL-9l-rDZ" id="npi-MT-0Ej"/>
+                                                    <outlet property="cardLabel" destination="2eS-IF-EPN" id="rzf-ou-FYE"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1V5-SP-Wrq" customClass="CardView" customModule="ConMind" customModuleProvider="target">
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="100"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cn9-5D-eBH">
+                                                        <rect key="frame" x="19" y="21.5" width="49.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-9C-aMx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="cn9-5D-eBH" firstAttribute="centerY" secondItem="1V5-SP-Wrq" secondAttribute="centerY" id="cbZ-jc-969"/>
+                                                    <constraint firstItem="cn9-5D-eBH" firstAttribute="centerX" secondItem="1V5-SP-Wrq" secondAttribute="centerX" id="rep-oM-04w"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="zhu-9C-aMx" id="zSp-n7-eYU"/>
+                                                    <outlet property="cardLabel" destination="cn9-5D-eBH" id="g0E-a7-1WX"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="316" id="eJR-xX-TbZ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I5-rh-T6G">
+                                <rect key="frame" x="156" y="845" width="102.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-eF-LvF">
+                                <rect key="frame" x="169.5" y="807" width="75" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="0qx-V3-h2e" eventType="touchUpInside" id="EgA-jg-99b"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5k-Dl-pTk">
+                                <rect key="frame" x="20" y="849" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchPicturesMode:" destination="0qx-V3-h2e" eventType="valueChanged" id="7mp-75-NwB"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pictures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqQ-Yv-9D3">
+                                <rect key="frame" x="20" y="817.5" width="62.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62.5" id="55o-Qz-0Kf"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="xOm-li-klh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1S7-eF-LvF" firstAttribute="centerX" secondItem="39g-Uo-QPN" secondAttribute="centerX" id="3j7-pH-VFP"/>
+                            <constraint firstItem="H5k-Dl-pTk" firstAttribute="leading" secondItem="7Kj-Em-WMG" secondAttribute="leading" constant="20" id="5QX-o2-xzs"/>
+                            <constraint firstItem="7I5-rh-T6G" firstAttribute="centerX" secondItem="7Kj-Em-WMG" secondAttribute="centerX" id="Wid-ee-3Je"/>
+                            <constraint firstItem="H5k-Dl-pTk" firstAttribute="top" secondItem="wqQ-Yv-9D3" secondAttribute="bottom" constant="11" id="YaZ-Cz-z3y"/>
+                            <constraint firstItem="7I5-rh-T6G" firstAttribute="top" secondItem="1S7-eF-LvF" secondAttribute="bottom" constant="8" id="ZNt-U8-YeY"/>
+                            <constraint firstItem="wqQ-Yv-9D3" firstAttribute="leading" secondItem="7Kj-Em-WMG" secondAttribute="leading" constant="20" id="aMv-nd-C9K"/>
+                            <constraint firstItem="djj-N1-pYh" firstAttribute="top" secondItem="7Kj-Em-WMG" secondAttribute="top" constant="20" id="dYb-a2-XJl"/>
+                            <constraint firstAttribute="bottom" secondItem="H5k-Dl-pTk" secondAttribute="bottom" constant="16" id="f6d-9q-Hcp"/>
+                            <constraint firstItem="7I5-rh-T6G" firstAttribute="bottom" secondItem="7Kj-Em-WMG" secondAttribute="bottom" constant="22.5" id="kNO-9q-3K9"/>
+                            <constraint firstItem="7Kj-Em-WMG" firstAttribute="trailing" secondItem="djj-N1-pYh" secondAttribute="trailing" constant="20" id="m5d-M8-Sz4"/>
+                            <constraint firstItem="djj-N1-pYh" firstAttribute="leading" secondItem="7Kj-Em-WMG" secondAttribute="leading" constant="20" id="u76-aZ-xnk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Kj-Em-WMG"/>
+                    </view>
+                    <connections>
+                        <outlet property="flipLabel" destination="7I5-rh-T6G" id="9cl-nX-cja"/>
+                        <outletCollection property="cardViews" destination="s9N-jN-6vy" collectionClass="NSMutableArray" id="hwC-mo-SPn"/>
+                        <outletCollection property="cardViews" destination="c9d-cl-1fM" collectionClass="NSMutableArray" id="gId-aF-ZTW"/>
+                        <outletCollection property="cardViews" destination="oMq-Ov-hii" collectionClass="NSMutableArray" id="Xci-0i-8in"/>
+                        <outletCollection property="cardViews" destination="3R0-a8-Nug" collectionClass="NSMutableArray" id="BOV-v9-Ove"/>
+                        <outletCollection property="cardViews" destination="Oy3-rs-w4L" collectionClass="NSMutableArray" id="TBA-Bx-9xW"/>
+                        <outletCollection property="cardViews" destination="hMQ-mg-BQr" collectionClass="NSMutableArray" id="hH0-Mj-Gtz"/>
+                        <outletCollection property="cardViews" destination="S01-pY-yQf" collectionClass="NSMutableArray" id="9Uh-vO-9Hk"/>
+                        <outletCollection property="cardViews" destination="VeX-aM-wQz" collectionClass="NSMutableArray" id="OLe-zq-VTe"/>
+                        <outletCollection property="cardViews" destination="DFB-5Y-myg" collectionClass="NSMutableArray" id="Qk4-05-Ka6"/>
+                        <outletCollection property="cardViews" destination="nQ7-hN-de2" collectionClass="NSMutableArray" id="m1q-Le-mFx"/>
+                        <outletCollection property="cardViews" destination="LrD-lg-isv" collectionClass="NSMutableArray" id="b93-iN-CBH"/>
+                        <outletCollection property="cardViews" destination="1V5-SP-Wrq" collectionClass="NSMutableArray" id="Wb1-s1-43f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2k3-nX-vIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24462.318840579712" y="-1291.0714285714284"/>
+        </scene>
+    </scenes>
+</document>
