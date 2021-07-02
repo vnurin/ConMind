@@ -18,10 +18,14 @@ class CardView: UIView {
         didSet {
             guard card != nil else {
                 //new game initialization
-                backgroundColor = .yellow
                 cardImageView.image = nil
                 cardImageView.isHidden = true
                 cardLabel.isHidden = true
+                UIView.animate(withDuration: 1.5) {
+//                    self.backgroundColor = .orange
+                    self.backgroundColor = .yellow
+
+                }
                 return
             }
             if oldValue == nil {
@@ -41,7 +45,9 @@ class CardView: UIView {
                     else {
                         cardLabel.isHidden = true
                     }
-                    backgroundColor = .black
+                    UIView.animate(withDuration: 2.0) {
+                        self.backgroundColor = .black
+                    }
                     return
                 }
                 if cardImageView.image != nil {

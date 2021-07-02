@@ -10,7 +10,7 @@ import Foundation
 
 class CardModel {
     static var pictures = true
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     var previousFaceUpIndex: Int?
     
     init(numberOfPairs: Int) {

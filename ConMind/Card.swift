@@ -11,7 +11,7 @@ import UIKit
 
 //this can't be struct for not having downloaded image only in the original (for not having it also in the copies made before image was downloaded)
 
-protocol Copyable {
+protocol Copyable: class {
     init(instance: Self)
 }
 class Card: Equatable, Copyable {
@@ -20,10 +20,10 @@ class Card: Equatable, Copyable {
         return lhs.id == rhs.id
     }
     
+    var id: Int
     var isFaceUp = false
     //if isMatched == true, the card is out of the game
     var isMatched = false
-    var id: Int
     var image: UIImage!
     
     init(id: Int) {
